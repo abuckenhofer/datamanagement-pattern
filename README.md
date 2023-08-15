@@ -1,4 +1,4 @@
-The repository holds a pattern for a data management project with Python.
+The repository holds a pattern for a data management projects with Python. It also contains examples for lectures/talks/presentations.
 
 # How to setup a Python environment?
 
