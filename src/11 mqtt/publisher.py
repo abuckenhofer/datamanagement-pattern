@@ -1,1 +1,0 @@
-# File is empty and used as placeholder for MQTT training.
