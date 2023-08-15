@@ -8,7 +8,7 @@ Download and install a Python version. It is highly recommended to work with vir
 $ <path to Python version>/python -m venv <path to virtual environment>
 ```
 
-<path to virtual environment> can be the root of the Python project, e.g. datamanagement-pattern.
+<path to virtual environment> can be the root of the Python project, e.g. datamanagement-pattern. A directory "venv" is created afterwards. The directory must be included in a gitignore file.
 
 When the virtual environment is created, the virtual environment can be activated or deactivated:
 ```
