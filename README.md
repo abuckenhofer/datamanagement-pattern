@@ -12,8 +12,8 @@ $ <path to Python version>/python -m venv <path to virtual environment>
 
 When the virtual environment is created, the virtual environment can be activated or deactivated by executing:
 ```
-<venv>/scripts/bin/activate
-<venv>/scripts/bin/deactivate
+$ <venv>/scripts/bin/activate
+$ <venv>/scripts/bin/deactivate
 ```
 
 When the virtual environment is active, Python packages can be installed as usual, e.g. navigate to datamanagement-pattern and run:
