@@ -10,10 +10,10 @@ $ <path to Python version>/python -m venv <path to virtual environment>
 
 <path to virtual environment> can be the root of the Python project, e.g. datamanagement-pattern. A directory "venv" is created afterwards. The directory must be included in a gitignore file.
 
-When the virtual environment is created, the virtual environment can be activated or deactivated:
+When the virtual environment is created, the virtual environment can be activated or deactivated by executing:
 ```
-<venv>/bin/activate
-<venv>/bin/deactivate
+<venv>/scripts/bin/activate
+<venv>/scripts/bin/deactivate
 ```
 
 When the virtual environment is active, Python packages can be installed as usual, e.g. navigate to datamanagement-pattern and run:
