@@ -1,0 +1,45 @@
+name: Code Quality
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - dev
+
+jobs:
+    isort:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: "3.11"
+            - run: pip install --upgrade pip
+            - run: pip install -r requirements.txt
+            - run: pip install isort
+            - name: Check Import Order with isort
+              run: isort --check ./*.py
+    black:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: "3.11"
+            - run: pip install --upgrade pip
+            - run: pip install -r requirements.txt
+            - run: pip install black
+            - name: Check Code Format with Black
+              run: black --check ./*.py
+    pylint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: "3.11"
+            - run: pip install --upgrade pip
+            - run: pip install -r requirements.txt
+            - run: pip install pylint
+            - name: Lint with Pylint
+              run: pylint ./*.py

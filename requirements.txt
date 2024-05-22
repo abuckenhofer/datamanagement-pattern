@@ -2,3 +2,8 @@ dbt-core==1.6.0
 dbt-postgres==1.6.0
 paho-mqtt==1.6.1
 psycopg2-binary==2.9.7
+flask
+flask_cors
+sqlalchemy
+sqlalchemy.orm
+logging
