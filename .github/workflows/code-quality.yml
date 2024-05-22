@@ -10,8 +10,8 @@ jobs:
     isort:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v3
               with:
                   python-version: "3.11"
             - run: pip install --upgrade pip
@@ -22,8 +22,8 @@ jobs:
     black:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v3
               with:
                   python-version: "3.11"
             - run: pip install --upgrade pip
@@ -34,8 +34,8 @@ jobs:
     pylint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v3
               with:
                   python-version: "3.11"
             - run: pip install --upgrade pip
