@@ -19,6 +19,18 @@ jobs:
             - run: pip install isort
             - name: Check Import Order with isort
               run: isort --check ./*.py
+    bandit:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.11"
+            - run: pip install --upgrade pip
+            - run: pip install -r requirements.txt
+            - run: pip install bandit
+            - name: Check Security issues
+              run: bandit -r ./*.py
     black:
         runs-on: ubuntu-latest
         steps:
