@@ -7,3 +7,5 @@ flask_cors
 sqlalchemy
 sqlalchemy.orm
 logging
+requests
+certifi
