@@ -78,7 +78,7 @@ def readFromDB(productNr):
     Session = sessionmaker(bind=engine)
     session = Session()
     # 105 OR 1=1
-    query = f"SELECT * FROM users WHERE productId = '{productNr}'"  # Unsicher, da SQL-Injection möglich ist
+    query = f"SELECT * FROM users WHERE productId = {productNr}"  # Unsicher, da SQL-Injection möglich ist
     result = engine.execute(query)
     return result.fetchall()
     
